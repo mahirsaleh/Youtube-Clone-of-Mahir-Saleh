@@ -1,0 +1,88 @@
+:root {
+    --lower: hsl(0deg 0% 37.65%);
+    --common-icon-size: 24px;
+}
+
+main {
+    background: rgb(249, 249, 249);
+    min-height: 120vh
+}
+
+img {
+    vertical-align: top;
+}
+
+.container {
+    display: grid;
+    row-gap: 18px;
+    column-gap: 8px;
+    padding: 20px;
+    margin-left: 72px;
+}
+
+.video-card {
+    padding: 4px;
+    vertical-align: top;
+}
+
+.video-card__info-div {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+}
+
+.thumbnail-div__thumbnail {
+    width: 100%;
+}
+
+.profile-div__profile {
+    width: 36px;
+    border-radius: 50%;
+    margin-top: 12px;
+}
+
+.video-card__thumbnail-div {
+    position: relative;
+}
+
+.thumbnail-div__video-time {
+    position: absolute;
+    bottom: 7px;
+    right: 4px;
+    color: white;
+    background: rgba(0, 0, 0, 0.9);
+    font-size: 12px;
+    padding: 4px 4px;
+    border-radius: 2px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+.video-info__video-title a {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.video-info__video-title {
+    margin-top: 11px;
+}
+
+.video-info__channel-name {
+    margin-top: 7px;
+}
+
+.video-info__channel-name a,
+.video-info__video-date {
+    color: var(--lower);
+    font-size: 12px;
+}
+
+.video-info__video-date {
+    margin-bottom: 16px;
+    margin-top: 3px;
+}
+

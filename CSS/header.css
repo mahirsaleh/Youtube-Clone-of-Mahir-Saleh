@@ -1,0 +1,232 @@
+:root {
+    --common-icon-size: 24px;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 57px;
+    /* margin-bottom: 20px; */
+    border-bottom: 1px solid hsl(0, 0%, 87%);
+}
+
+        /* Left Side Start's Here */
+
+.header__left-side {
+    display: flex;
+    align-items: center;
+}
+
+.left-side__hamburger-menu {
+    width: var(--common-icon-size);
+    margin: 0px 24px;
+    cursor: pointer;
+}
+
+.left-side__youtube-logo {
+    width: 90px;
+    cursor: pointer;
+}
+         /* Left Side End's Here */
+
+        /* Mid Side Start's Here */
+
+.header__mid-side {
+    margin-left: 60px;
+    max-width: 470px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.mid-side__search-box {
+    font-size: 16px;
+    height: 40px;
+    border: 1px solid hsl(0, 0%, 80%);
+    padding: 1px 2px 1px 12px;
+    flex: 1;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: inset 0px 1px 2px hsl(0, 0%, 93%);
+    width: 0;
+}
+
+.search-button__search-icon ,
+.voice-button__voice-icon {
+    width: var(--common-icon-size);
+}
+
+.mid-side__search-button {
+    height: 40px;
+    width: 64px;
+    padding: 1px 6px;
+    margin-right: 8px;
+    background: hsl(0, 0%, 97%);
+    border: 1px solid hsl(0, 0%, 80%);
+    display: grid;
+    place-items: center;
+    border-left: none;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    cursor: pointer;
+}
+
+.mid-side__search-button:hover {
+    background: hsl(0, 0%, 93%);
+}
+ 
+.mid-side__search-button:active {
+    background: hsl(0, 0%, 90%);
+}
+
+.mid-side__voice-button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 97%);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+        /* Mid Side End's Here */
+
+        /* Right Side Start's Here */
+
+.header__right-side {   
+    width: 182px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 29px;
+    margin-right: 24px;
+    flex-shrink: 0;
+}
+
+.upload-div__upload-icon ,
+.notify-div__notify-icon ,
+.apps-div__apps-icon {
+    width: var(--common-icon-size);
+    cursor: pointer;
+}
+
+.user-div__user-channel {
+    width: 32px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.notify-div__box {
+    position: relative;
+}
+
+.bell-icon {
+    background: hsl(0, 100%, 40%);
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    padding: 1px 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    right: -7px;
+    border: 2px solid white;
+    user-select: none;
+    cursor: pointer;
+}
+ 
+       /* Right Side End's Here */
+
+    /* Side Bar Start's Here */
+
+
+.side-bar {
+    position: relative;
+}
+
+#checkbox {
+    display: none;
+}
+    
+.main__side-bar {
+        position: fixed;
+        top: 56px;
+        background: white;
+        width: 72px;
+        padding-top: 4px;
+        z-index: 100;
+        left: 0;
+        bottom: 0px;
+    }
+    
+    [class*=side-bar__icon-] > img {
+        height: var(--common-icon-size);
+        margin-bottom: 6px;
+    }
+    
+    [class*=side-bar__icon-] {
+        font-size: 10px;
+        height: 74px;
+        cursor: pointer;
+        transition: background-color 0.15s;
+        color: hsl(210, 11%, 15%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+    
+    [class*=side-bar__icon-]:hover {
+        background-color: hsl(0, 6%, 90%);
+    }
+        /* Side Bar End's Here */
+
+        /* Tooltip Strat's Here */
+.tooltip-div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltip{
+    position: absolute;
+    background-color: hsla(0, 0%, 38%, 0.9);
+    font-size: 12px;
+    padding: 12px 8px;
+    border-radius: 2px;
+    color: white;
+    z-index: 1000;
+    font-weight: 400;
+    top: 40px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.15s;
+}
+
+.tooltip-div:hover .tooltip {
+    opacity: 1;
+}
+
+.voice-tooltip {
+    width: 138px;
+}
+
+.apps-tooltip {
+    width: 95px;
+}
+
+.voice-tooltip ,
+.search-tooltip {
+    top: 55px;
+}
+     /* Tooltip End's Here */
+    

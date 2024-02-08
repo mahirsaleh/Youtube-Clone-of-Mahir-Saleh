@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>
+          Youtube.com Clone (Mahir-Saleh)
+     </title>
+
+                    <!--Font's Start's Here-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+                    <!--Font's End's Here-->
+
+                    <!--CSS Start's Here-->
+    <link rel="stylesheet" href="CSS/general.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/main.css">
+                    <!--CSS End's Here-->
+
+                    <!--Responsive CSS Start's Here-->
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" 
+     href="CSS/desktop.css">
+    <link rel="stylesheet" media="(min-width: 992px) and (max-width: 1199px)"
+      href="CSS/laptop.css">
+    <link rel="stylesheet" media="(min-width: 601px) and (max-width: 991px)"
+     href="CSS/taplets.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)"
+     href="CSS/mobile.css">
+                    <!--Responsive CSS End's Here-->
+</head>
+<body>
+                <!--Header Start's Here-->
+    <header>
+        <div class="header">
+            <div class="header__left-side">
+
+                <!--Sider-bar Start's Here-->
+                <div class="side-bar">
+                        <input type="checkbox" name="checkbox" 
+                         id="checkbox">
+                        <label for="checkbox">
+                            <img src="Icons/hamburger-menu.svg" alt="Sorry" 
+                             class="left-side__hamburger-menu" title="Hamburger Menu">
+                        </label>
+                    
+                   
+                    <nav class="main__side-bar">
+                        <div class="side-bar__icon-1">
+                            <img src="Icons/home.svg" alt="sorry" 
+                             class="icon-1__home-icon">
+                            
+                            <p class="icon-1__home">
+                                Home
+                            </p>
+                        </div>
+                        
+                        <div class="side-bar__icon-2">
+                            <img src="Icons/explore.svg" alt="sorry" 
+                             class="icon-2__explore-icon">
+                            
+                            <p class="icon-2__explore">
+                                Explore
+                            </p>
+                        </div>
+                        
+                        <div class="side-bar__icon-3">
+                            <img src="Icons/subscriptions.svg" alt="sorry" 
+                             class="icon-3__subscriptions-icon">
+                            
+                            <p class="icon-3__subscriptions">
+                                Subscriptions
+                            </p>
+                        </div>
+                        
+                        <div class="side-bar__icon-4">
+                            <img src="Icons/originals.svg" alt="sorry" 
+                             class="icon-4__originals-icon">
+                            
+                            <p class="icon-4__originals">
+                                Originals
+                            </p>
+                        </div>
+                        
+                        <div class="side-bar__icon-5">
+                            <img src="Icons/youtube-music.svg" alt="sorry" 
+                             class="icon-5__youtube-music-icon">
+                            
+                            <p class="icon-5__youtube-music">
+                                YouTube Music
+                            </p>
+                        </div>
+                        
+                        <div class="side-bar__icon-6">
+                            <img src="Icons/library.svg" alt="sorry" 
+                             class="icon-6__library-icon">
+                            
+                            <p class="icon-6__library">
+                                Library
+                            </p>
+                        </div>
+                    </nav> 
+                </div>
+                        <!--Side-Bar End's Here-->        
+
+                <img src="Icons/youtube-logo.svg" alt="Sorry" 
+                 class="left-side__youtube-logo" title="Youtube Logo">
+            </div>
+
+            <div class="header__mid-side">
+                <input type="text" class="mid-side__search-box"
+                 placeholder="Search" id="search">
+                
+                <div class="tooltip-div">
+                    <button class="mid-side__search-button">
+                        <img src="Icons/search.svg" alt="Search" 
+                         class="search-button__search-icon" title="Search">
+                    </button>
+
+                    <span class="tooltip search-tooltip">
+                        Search
+                    </span>
+                </div>
+                
+                <div class="tooltip-div">
+                    <button class="mid-side__voice-button">
+                        <img src="Icons/voice-search-icon.svg" alt="voice-search" 
+                         class="voice-button__voice-icon" title="Voice-Search">
+                    </button>
+
+                    <span class="tooltip voice-tooltip">
+                        Search with your voice
+                    </span>
+                </div>
+            </div>
+
+            <div class="header__right-side">
+                <div class="tooltip-div">
+                    <div class="right-side__upload-div">
+                        <img src="Icons/upload.svg" alt="Upload" 
+                         class="upload-div__upload-icon" title="Create">
+                    </div>
+
+                    <span class="tooltip create-tooltip">
+                        Create
+                    </span>
+                </div>
+                 
+                <div class="tooltip-div">
+                    <div class="right-side__apps-div">
+                        <img src="Icons/youtube-apps.svg" alt="Youtube-apps" 
+                         class="apps-div__apps-icon" title="Youtube Apps">
+                    </div>
+
+                    <span class="tooltip apps-tooltip">
+                        YouTube-apps
+                    </span>
+                </div>
+
+                <div class="right-side__notify-div">
+                    <div class="tooltip-div">
+                        <div class="notify-div__box">
+                            <img src="Icons/notifications.svg" alt="Notifications" 
+                             class="notify-div__notify-icon" title="Notifications">
+                            <span class="bell-icon">
+                                3
+                            </span>
+                        </div>
+                        <span class="tooltip notify-tooltip">
+                            Notifications
+                        </span>
+                    </div>
+                </div>
+
+                <div class="right-side__user-div">
+                    <img src="Images/mahir-saleh.jpg" alt="Mahir-Saleh" 
+                 class="user-div__user-channel" title="My Channel">
+                </div>
+            </div>
+        </div>
+    </header>
+
+        <!--Header Ends Here-->
+
+        <!-- Main Start's here -->
+
+    <main>
+        <div class="container">
+                <!--Video 1 Strat's Here-->
+            <div class="video-card">
+                <div class="video-card__thumbnail-div">
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                        <img src="Images/thumbnail-1.webp" alt="Sorry"
+                         title="Thumbnial-1" class="thumbnail-div__thumbnail">
+                    </a>
+                    <p class="thumbnail-div__video-time">
+                        14:20
+                    </p>
+                </div>
+
+                <div class="video-card__info-div">
+                    <div class="info-div__profile-div">
+                        <a href="https://www.youtube.com/c/mkbhd">
+                            <img src="Images/channel-1.jpeg" alt="Sorry"
+                             title="Channel-1" class="profile-div__profile">
+                        </a>
+                    </div>
+
+                    <div class="info-div__video-info">
+                        <p class="video-info__video-title">
+                            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                                Talking Tech and AI with Google CEO Sundar Pichai!
+                            </a>
+                        </p>
+                        <p class="video-info__channel-name">
+                            <a href="https://www.youtube.com/c/mkbhd">
+                                Marques Brownlee
+                            </a>
+                        </p>
+                        <p class="video-info__video-date">
+                            3.4M views · 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <!--Video 1 End's Here-->
+                <!--Video 2 Strat's Here-->
+            <div class="video-card">
+                <div class="video-card__thumbnail-div">
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                        <img src="Images/thumbnail-2.webp" alt="Sorry"
+                         title="Thumbnial-1" class="thumbnail-div__thumbnail">
+                    </a>
+                    <p class="thumbnail-div__video-time">
+                        8:22
+                    </p>
+                </div>
+
+                <div class="video-card__info-div">
+                    <div class="info-div__profile-div">
+                        <a href="https://www.youtube.com/c/mkbhd">
+                            <img src="Images/channel-2.jpeg" alt="Sorry"
+                             title="Channel-1" class="profile-div__profile">
+                        </a>
+                    </div>
+
+                    <div class="info-div__video-info">
+                        <p class="video-info__video-title">
+                            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">                              
+                            Try Not To Laugh Challenge #9
+                            </a>
+                        </p>
+                        <p class="video-info__channel-name">
+                            <a href="https://www.youtube.com/c/mkbhd">
+                                Markiplier
+                            </a>
+                        </p>
+                        <p class="video-info__video-date">
+                            19M views · 4 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <!--Video 2 End's Here-->
+                <!--Video 3 Strat's Here-->
+            <div class="video-card">
+                <div class="video-card__thumbnail-div">
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                        <img src="Images/thumbnail-3.webp" alt="Sorry"
+                         title="Thumbnial-1" class="thumbnail-div__thumbnail">
+                    </a>
+                    <p class="thumbnail-div__video-time">
+                        6:31:23
+                    </p>
+                </div>
+
+                <div class="video-card__info-div">
+                    <div class="info-div__profile-div">
+                        <a href="https://www.youtube.com/c/mkbhd">
+                            <img src="Images/channel-3.jpg" alt="Sorry"
+                             title="Channel-1" class="profile-div__profile">
+                        </a>
+                    </div>
+
+                    <div class="info-div__video-info">
+                        <p class="video-info__video-title">
+                            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                                HTML & CSS Full Course - Beginner to Pro
+                            </a>
+                        </p>
+                        <p class="video-info__channel-name">
+                            <a href="https://www.youtube.com/c/mkbhd">
+                                SuperSimpleDev
+                            </a>
+                        </p>
+                        <p class="video-info__video-date">
+                            7M views · 5 Feb 2022
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <!--Video 3 End's Here-->
+                <!--Video 4 Strat's Here-->
+            <div class="video-card">
+                <div class="video-card__thumbnail-div">
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                        <img src="Images/thumbnail-4.webp" alt="Sorry"
+                         title="Thumbnial-1" class="thumbnail-div__thumbnail">
+                    </a>
+                    <p class="thumbnail-div__video-time">
+                        22:09
+                    </p>
+                </div>
+
+                <div class="video-card__info-div">
+                    <div class="info-div__profile-div">
+                        <a href="https://www.youtube.com/c/mkbhd">
+                            <img src="Images/channel-4.jpeg" alt="Sorry"
+                             title="Channel-1" class="profile-div__profile">
+                        </a>
+                    </div>
+
+                    <div class="info-div__video-info problem">
+                        <p class="video-info__video-title video-title--edit">
+                            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">                               
+                                 The Simplest Math Problem No One Can Solve - Collatz Conjecture
+                            </a>
+                        </p>
+                        <p class="video-info__channel-name channel-name--edit">
+                            <a href="https://www.youtube.com/c/mkbhd">
+                                Veritasium
+                            </a>
+                        </p>
+                        <p class="video-info__video-date video-date--edit">
+                            18M views · 4 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <!--Video 4 End's Here-->
+                <!--Video 5 Strat's Here-->
+            <div class="video-card">
+                <div class="video-card__thumbnail-div">
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                        <img src="Images/thumbnail-5.webp" alt="Sorry"
+                         title="Thumbnial-1" class="thumbnail-div__thumbnail">
+                    </a>
+                    <p class="thumbnail-div__video-time">
+                        11:17
+                    </p>
+                </div>
+
+                <div class="video-card__info-div">
+                    <div class="info-div__profile-div">
+                        <a href="https://www.youtube.com/c/mkbhd">
+                            <img src="Images/channel-5.jpeg" alt="Sorry"
+                             title="Channel-1" class="profile-div__profile">
+                        </a>
+                    </div>
+
+                    <div class="info-div__video-info">
+                        <p class="video-info__video-title">
+                            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                                Kadane's Algorithm to Maximum Sum Subarray Problem
+                            </a>
+                        </p>
+                        <p class="video-info__channel-name">
+                            <a href="https://www.youtube.com/c/mkbhd">
+                                CS Dojo
+                            </a>
+                        </p>
+                        <p class="video-info__video-date">
+                            519K views · 5 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <!--Video 5 End's Here-->
+                <!--Video 6 Strat's Here-->
+            <div class="video-card">
+                <div class="video-card__thumbnail-div">
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                        <img src="Images/thumbnail-6.webp" alt="Sorry"
+                         title="Thumbnial-1" class="thumbnail-div__thumbnail">
+                    </a>
+                    <p class="thumbnail-div__video-time">
+                        19:59
+                    </p>
+                </div>
+
+                <div class="video-card__info-div">
+                    <div class="info-div__profile-div">
+                        <a href="https://www.youtube.com/c/mkbhd">
+                            <img src="Images/channel-6.jpeg" alt="Sorry"
+                             title="Channel-1" class="profile-div__profile">
+                        </a>
+                    </div>
+
+                    <div class="info-div__video-info">
+                        <p class="video-info__video-title">
+                            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">                        
+                                Anything You Can Fit In The Circle I’ll Pay For
+                            </a>
+                        </p>
+                        <p class="video-info__channel-name">
+                            <a href="https://www.youtube.com/c/mkbhd">
+                                MrBeast
+                            </a>
+                        </p>
+                        <p class="video-info__video-date">
+                            141M views · 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <!--Video 6 End's Here-->
+                <!--Video 7 Strat's Here-->
+            <div class="video-card">
+                <div class="video-card__thumbnail-div">
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                        <img src="Images/thumbnail-7.webp" alt="Sorry"
+                         title="Thumbnial-1" class="thumbnail-div__thumbnail">
+                    </a>
+                    <p class="thumbnail-div__video-time">
+                        10:13
+                    </p>
+                </div>
+
+                <div class="video-card__info-div">
+                    <div class="info-div__profile-div">
+                        <a href="https://www.youtube.com/c/mkbhd">
+                            <img src="Images/channel-7.jpeg" alt="Sorry"
+                             title="Channel-1" class="profile-div__profile">
+                        </a>
+                    </div>
+
+                    <div class="info-div__video-info">
+                        <p class="video-info__video-title">
+                            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">                         
+                                Why Planes Don't Fly Over Tibet
+                            </a>
+                        </p>
+                        <p class="video-info__channel-name">
+                            <a href="https://www.youtube.com/c/mkbhd">
+                                RealLifeLore
+                            </a>
+                        </p>
+                        <p class="video-info__video-date">
+                            6.6M views · 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <!--Video 7 End's Here-->
+                <!--Video 8 Strat's Here-->
+            <div class="video-card">
+                <div class="video-card__thumbnail-div">
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                        <img src="Images/thumbnail-8.webp" alt="Sorry"
+                         title="Thumbnial-1" class="thumbnail-div__thumbnail">
+                    </a>
+                    <p class="thumbnail-div__video-time">
+                        7:12
+                    </p>
+                </div>
+
+                <div class="video-card__info-div">
+                    <div class="info-div__profile-div">
+                        <a href="https://www.youtube.com/c/mkbhd">
+                            <img src="Images/channel-8.jpeg" alt="Sorry"
+                             title="Channel-1" class="profile-div__profile">
+                        </a>
+                    </div>
+
+                    <div class="info-div__video-info">
+                        <p class="video-info__video-title">
+                            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                                Inside The World's Biggest Passenger Plane   
+                            </a>
+                        </p>
+                        <p class="video-info__channel-name">
+                            <a href="https://www.youtube.com/c/mkbhd">
+                                Tech Vision
+                            </a>
+                        </p>
+                        <p class="video-info__video-date">
+                            3.7M views · 10 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <!--Video 8 End's Here-->
+                <!--Video 9 Strat's Here-->
+            <div class="video-card video-card--bottom">
+                <div class="video-card__thumbnail-div">
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                        <img src="Images/thumbnail-9.webp" alt="Sorry"
+                         title="Thumbnial-1" class="thumbnail-div__thumbnail">
+                    </a>
+                    <p class="thumbnail-div__video-time">
+                        13:17
+                    </p>
+                </div>
+
+                <div class="video-card__info-div">
+                    <div class="info-div__profile-div">
+                        <a href="https://www.youtube.com/c/mkbhd">
+                            <img src="Images/channel-9.jpeg" alt="Sorry"
+                             title="Channel-1" class="profile-div__profile">
+                        </a>
+                    </div>
+
+                    <div class="info-div__video-info">
+                        <p class="video-info__video-title">
+                            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">             
+                                The SECRET to Super Human STRENGTH
+                            </a>
+                        </p>
+                        <p class="video-info__channel-name">
+                            <a href="https://www.youtube.com/c/mkbhd">
+                                ThenX
+                            </a>
+                        </p>
+                        <p class="video-info__video-date">
+                            20M views · 3 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <!--Video 9 End's Here-->
+                <!--Video 10 Strat's Here-->
+            <div class="video-card video-card--bottom">
+                <div class="video-card__thumbnail-div">
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                        <img src="Images/thumbnail-10.webp" alt="Sorry"
+                         title="Thumbnial-1" class="thumbnail-div__thumbnail">
+                    </a>
+                    <p class="thumbnail-div__video-time">
+                        7:53
+                    </p>
+                </div>
+
+                <div class="video-card__info-div">
+                    <div class="info-div__profile-div">
+                        <a href="https://www.youtube.com/c/mkbhd">
+                            <img src="Images/channel-10.jpeg" alt="Sorry"
+                             title="Channel-1" class="profile-div__profile">
+                        </a>
+                    </div>
+
+                    <div class="info-div__video-info">
+                        <p class="video-info__video-title channel-name--edit">
+                            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">                       
+                                How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+                            </a>
+                        </p>
+                        <p class="video-info__channel-name video-title--edit">
+                            <a href="https://www.youtube.com/c/mkbhd">
+                                Business Insider
+                            </a>
+                        </p>
+                        <p class="video-info__video-date video-date--edit">
+                            14M views · 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <!--Video 10 End's Here-->
+                <!--Video 11 Strat's Here-->
+            <div class="video-card video-card--bottom">
+                <div class="video-card__thumbnail-div">
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                        <img src="Images/thumbnail-11.webp" alt="Sorry"
+                         title="Thumbnial-1" class="thumbnail-div__thumbnail">
+                    </a>
+                    <p class="thumbnail-div__video-time">
+                        4:10
+                    </p>
+                </div>
+
+                <div class="video-card__info-div">
+                    <div class="info-div__profile-div">
+                        <a href="https://www.youtube.com/c/mkbhd">
+                            <img src="Images/channel-11.jpeg" alt="Sorry"
+                             title="Channel-1" class="profile-div__profile">
+                        </a>
+                    </div>
+
+                    <div class="info-div__video-info">
+                        <p class="video-info__video-title video-title--edit">
+                            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                               Dubai's Crazy Underwater Train and Other Things #Only in Dubai
+                            </a>
+                        </p>
+                        <p class="video-info__channel-name channel-name--edit">
+                            <a href="https://www.youtube.com/c/mkbhd">
+                                Destination Tips
+                            </a>
+                        </p>
+                        <p class="video-info__video-date video-date--edit">
+                            3M views · 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <!--Video 11 End's Here-->
+                <!--Video 12 Strat's Here-->
+            <div class="video-card video-card--bottom">
+                <div class="video-card__thumbnail-div">
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                        <img src="Images/thumbnail-12.webp" alt="Sorry"
+                         title="Thumbnial-1" class="thumbnail-div__thumbnail">
+                    </a>
+                    <p class="thumbnail-div__video-time">
+                        4:51
+                    </p>
+                </div>
+
+                <div class="video-card__info-div">
+                    <div class="info-div__profile-div">
+                        <a href="https://www.youtube.com/c/mkbhd">
+                            <img src="Images/channel-12.jpeg" alt="Sorry"
+                             title="Channel-1" class="profile-div__profile">
+                        </a>
+                    </div>
+
+                    <div class="info-div__video-info">
+                        <p class="video-info__video-title">
+                            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                                What would happen if you didn’t drink water? - Mia Nacamulli
+                            </a>
+                        </p>
+                        <p class="video-info__channel-name">
+                            <a href="https://www.youtube.com/c/mkbhd">
+                                TED-Ed
+                            </a>
+                        </p>
+                        <p class="video-info__video-date">
+                            12M views · 5 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <!--Video 12 End's Here-->
+        </div>
+    </main>
+            <!--Main End's Here-->
+
+            <!--Footer Start's Here-->
+    <footer></footer>
+            <!--Footer End's Here-->
+     
+</body>
+</html>
